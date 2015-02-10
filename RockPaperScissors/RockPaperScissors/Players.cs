@@ -5,17 +5,17 @@ namespace RockPaperScissors
 {
     public class Players
     {
-        public static Player GetPlayerOne()
+        public static Player GetHumanPlayer()
         {
-            var playerOne = new Player();
+            var humanPlayer = new Player();
 
             Console.WriteLine("Hello, what is your name?");
 
-            playerOne.PlayerName = Console.ReadLine();
+            humanPlayer.PlayerName = Console.ReadLine();
 
-            Console.WriteLine("Welcome back " + playerOne.PlayerName);
+            Console.WriteLine("Welcome back " + humanPlayer.PlayerName);
 
-            return playerOne;
+            return humanPlayer;
         }
 
         public static Player GetComputerPlayer()
